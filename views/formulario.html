@@ -11,61 +11,47 @@
     <header>
         <nav class="nav">
             <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="../views/acercade.html">Acerca de</a></li>
-                <li><a href="../views/tablas.html">Generaciones</a></li>
-                <li><a href="../views/formulario.html">Encuestas</a></li>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="acercade.html">Acerca de</a></li>
+                <li><a href="tablas.html">Generaciones</a></li>
+                <li><a href="formulario.html">Encuestas</a></li>
             </ul>
         </nav>
     </header>
-    <form>
+    <main>
 
-        <label>Nombre Completo</label>
-        <br />
-        <input type="text" id="txtNombre* requirired" />
-        <br />
-        <br />
+        <div>
+            <form action="/action_page.php">
+                <label for="fname">Nombre y Apellido</label>
+                <input type="text" id="fname" name="firstname" placeholder="Por favor escribe tu nombre" required>
 
-        <label>Correo</label>
-        <br>
-        <input type="email" id="txtCorreo" placeholder="nombre@gmail.com" required />
-        <br />
-        <br />
+                <label for="txtFecha">Fecha</label>
+                <input type="date" id="txtFecha" required />
 
-        <label>Fecha</label>
-        <br />
-        <input type="date" id="txtFecha* requirired" />
-        <br />
-        <br />
+                <label for="txtCorreo">Correo Electrónico</label>
+                <input type="email" id="txtCorreo" name="correo" placeholder="Tunombre0000@gmail.com" required>
 
-        <label>Telefono</label>
-        <br />
-        <input type="tel" id="txtTelefono* placeholder=" 0000-0000" requirired" />
-        <br />
-        <br />
+                <label for="dios">¿Cuál fue tu dios favorito?</label>
+                <select id="dios" name="dios">
+                    <option value="zeus">Zeus</option>
+                    <option value="poseidon">Poseidón</option>
+                    <option value="hades">Hades</option>
+                    <option value="hera">Hera</option>
+                    <option value="atenea">Atenea</option>
+                    <option value="apolo">Apolo</option>
+                    <option value="artemisa">Artemisa</option>
+                    <option value="ares">Ares</option>
+                    <option value="afrodita">Afrodita</option>
+                </select>
 
-        <label>Asunto</label>
-        <br />
-        <select id="slAsunto" required>
-            <option value="VENTAS">VENTAS</option>
-            <option value="SOPORTE">SOPORTE</option>
-            <option value="RECLAMO">RECLAMO</option>
-        </select>
-        <br />
-        <br />
+                <input type="submit" value="Enviar encuesta">
+            </form>
+        </div>
 
-        <label>Mensaje</label>
+      <!--Direccionamiento-->
         <br />
-        <textarea id="txtMensaje" rows="3" cols="60" required></textarea>
-        <br />
-        <br />
-
-        <button type="submit">Enviar</button>
-    </form>
-
-    <!--Direccionamiento-->
-    <br />
-    <a href="../index.html">Regresar al inicio</a>
+        <a href="../index.html">Regresar al inicio</a>
+    </main>>
 
 
 </body>
