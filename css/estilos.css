@@ -4,56 +4,73 @@
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    background-image: url('images/imagenuniverso.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 header {
-    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    background-color: #333;
     color: #fff;
-    padding: 20px 0;
+    padding: 10px 0;
     text-align: center;
 }
 
-    header h1 {
-        margin: 0;
-        font-size: 2.5em;
-        animation: fadeIn 2s ease-in-out;
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+    .nav ul li {
+        margin: 0 15px;
     }
 
-    header p {
-        margin: 0;
-        font-size: 1.2em;
-        animation: fadeIn 2s ease-in-out 1s;
-    }
+        .nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+            .nav ul li a:hover {
+                text-decoration: underline;
+            }
 
 main {
     padding: 20px;
-}
-
-.dios {
-    background-color: #fff;
-    margin: 20px 0;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
+    flex-direction: column;
     align-items: center;
-    animation: slideIn 1s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+    border-radius: 10px;
 }
 
-    .dios img {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        margin-right: 20px;
+    main h1 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
     }
 
-    .dios .info {
-        max-width: 600px;
+    main img {
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
     }
 
-    .dios h2 {
-        margin-top: 0;
-        color: #333;
+        main img.small-image {
+            width: 50%;
+            height: auto;
+        }
+
+    main p {
+        font-size: 1.2em;
+        line-height: 1.6;
+        font-style: italic;
+        max-width: 800px;
+        text-align: left;
+        margin: 0 20px;
     }
 
 footer {
@@ -66,22 +83,4 @@ footer {
     bottom: 0;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
 
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes slideIn {
-    from {
-        transform: translateX(-100%);
-    }
-
-    to {
-        transform: translateX(0);
-    }
-}
