@@ -6,6 +6,7 @@
     <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/estilos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
 <body>
     <header>
@@ -19,14 +20,14 @@
         </nav>
     </header>
     <main>
-
-        <main>
-
-            <div>
-                <form action="/action_page.php">
+        <div>
+            <form action="/action_page.php" id="miFormulario">
+                <div>
                     <div>
                         <label for="fname">Nombre y Apellido</label>
                         <input type="text" id="fname" name="firstname" placeholder="Por favor escribe tu nombre" required>
+                    </div>
+
 
                     <div>
                         <label for="txtFecha">Fecha</label>
@@ -50,17 +51,32 @@
                             <option value="afrodita">Afrodita</option>
                         </select>
                     </div>
-                    <input type="submit" value="Enviar encuesta">
-                </form>
+                    <input type="submit" value="Enviar encuesta" id="btnEnviar">
+            </form>
+        </div>
+
+        <!--Direccionamiento-->
+        <br />
+        <a href="../index.html">Regresar al inicio</a>
+    </main>
+    <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h4>Tambien está nuestra Merch</h4>
+                        <button class="boton-merch" onclick="window.open('https://www.destripandolahistoria.com/?srsltid=AfmBOooF8Re-rgDTwRLOQCqGzj4njESWNzKxfPfQQe5VfQuTQbXpTAls', '_blank')"></button>
+
+
+                    </div>
+                    <h4>Síguenos en redes sociales</h4>
+                    <button class="boton-facebook" onclick="window.open('https://web.facebook.com/destripandolahistoria', '_blank')">       </button>
+                    <button class="boton-instagram" onclick="window.open('https://www.instagram.com/destripandolahistoria/', '_blank')">       </button>
+                    <button class="boton-twitter" onclick="window.open ('https://x.com/pascuyrodri', '_blank')">        </button>
+                </div>
+
             </div>
-
-            <img
-
-            <!--Direccionamiento-->
-            <br />
-            <a href="../index.html">Regresar al inicio</a>
-        </main>
-
-
+            <p>&copy; 2024 | Pascu y Rodri | Destripando la historia | Todos los derechos reservados.</p>
+            
+    </footer>
 </body>
 </html>

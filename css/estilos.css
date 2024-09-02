@@ -95,13 +95,13 @@ main {
     }
 
 
-
+/*pagina de acerca de*/
 body {
     background-image: url(../images/elpartenonimage.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    opacity: 0.9; /* Opacidad 50% */
+    opacity: 0.9;
 }
 
 body {
@@ -121,7 +121,7 @@ h1 {
     background-color: #E6E6FA; /* Morado lila claro */
     margin: 30px;
     padding: 30px;
-    box-shadow: 5px 5px 15px #D8BFD8; /* Sombra morada */
+    box-shadow: 5px 5px 15px #D8BFD8;
     transition: transform 0.4s;
 }
 
@@ -165,6 +165,24 @@ h1 {
             background-color: #7B68EE; /* Morado lila oscuro */
         }
 
+/*Pagina de la tabla*/
+.table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 200%;
+}
+
+td, th {
+    border: 2px solid #dddddd;
+    text-align: left;
+    padding: 12px;
+}
+
+tr:nth-child(even) {
+    background-color: #000000;
+}
+
+/*Pagina de la encuesta*/
 input[type=text], input[type=email], select {
     width: 100%;
     padding: 12px 20px;
@@ -222,13 +240,62 @@ input[type="date"] {
 
 
 footer {
+
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 9px 0;
     width: 100%;
-    bottom: 0;
+    bottom: 5;
+    
 }
 
 
 
+/* Botón de Facebook */
+.boton-facebook {
+    background-image: url('https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/facebook.svg');
+    background-size: 30px 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Botón del carrito */
+.boton-merch {
+    background-image: url('https://i.pinimg.com/564x/bc/64/33/bc64339266c0e08bdad5986590f5390b.jpg');
+    background-size: 30px 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Botón de Twitter */
+.boton-twitter {
+    background-image: url('https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg');
+    background-size: 30px 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Botón de Instagram */
+.boton-instagram {
+    background-image: url('https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg');
+    background-size: 30px 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
