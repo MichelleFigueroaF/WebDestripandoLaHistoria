@@ -60,28 +60,14 @@ ul {
 }
 
 .banner {
-    width: 50%;
-    height: auto;
     margin: 20px auto;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.imagen2 {
-    width: 30%;
-    height: auto;
-    margin: 20px 0;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    float: right;
-}
 
-.texto-izquierda {
-    width: 60%;
-    float: left;
-    text-align: justify;
-    
-}
+
+
 
 main {
     padding: 20px;
@@ -107,6 +93,16 @@ main {
         margin: 0 20px;
         color: #fff;
     }
+
+
+
+body {
+    background-image: url(../images/elpartenonimage.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 0.9; /* Opacidad 50% */
+}
 
 body {
     background-color: rgba(0, 0, 0, 0.3);
@@ -190,20 +186,21 @@ input[type=submit] {
     cursor: pointer;
 }
 
+/* css del Formularios*/
     input[type=submit]:hover {
         background-color: #45a049;
     }
 
 div {
     border-radius: 5px;
-    background-color: #f2f2f2;
     padding: 20px;
+
 }
 
 label {
-    font-family: Arial, sans-serif;
-    font-size: 1rem;
-    color: #333;
+    font-family: 'Times New Roman';
+    font-size: 2rem;
+    color: #fff;
 }
 
 input[type="date"] {
@@ -229,7 +226,6 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
     width: 100%;
     bottom: 0;
 }
